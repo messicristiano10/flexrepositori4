@@ -1,99 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Flexbox Práctica Completa</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Páginas del Proyecto</title>
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
     body {
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #008cff, #00c6ff);
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      color: #333;
+      text-align: center;
+      margin-top: 80px;
+    }
+    h1 {
+      margin-bottom: 30px;
+    }
+    a {
+      display: block;
+      margin: 10px auto;
+      width: fit-content;
+      padding: 10px 20px;
+      background: #007bff;
       color: white;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-
-    header {
-      text-align: center;
-      padding: 2rem;
-      background: rgba(0, 0, 0, 0.2);
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      font-weight: 600;
-    }
-
-    main {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 2rem;
-      gap: 2rem;
-    }
-
-    .intro {
-      max-width: 700px;
-      text-align: center;
-      background: rgba(255, 255, 255, 0.15);
-      padding: 1.5rem 2rem;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
-
-    .links {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-    }
-
-    .links a {
       text-decoration: none;
-      background: rgba(255, 255, 255, 0.2);
-      color: white;
-      padding: 0.8rem 1.5rem;
-      border-radius: 8px;
-      font-weight: 500;
-      transition: all 0.3s ease;
+      border-radius: 6px;
+      transition: 0.2s;
     }
-
-    .links a:hover {
-      background: white;
-      color: #008cff;
-      transform: scale(1.05);
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      background: rgba(0, 0, 0, 0.2);
+    a:hover {
+      background: #0056b3;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>🌐 Flexbox Práctica Completa</h1>
-  </header>
-
-  <main>
-    <div class="intro">
-      <p>
-        Bienvenido al proyecto <strong>Flexbox Práctica Completa</strong>.  
-        Aquí podés explorar distintos ejemplos y ejercicios de maquetación con Flexbox, diseñados para ayudarte a dominar el diseño moderno en CSS.
-      </p>
-    </div>
-
+  <h1>Mis páginas del proyecto</h1>
     <div class="links">
       <a href="Flex1.html">Ejemplo 1</a>
       <a href="Flex2-align-content_center.html">Ejemplo 2</a>
