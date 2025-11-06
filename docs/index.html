@@ -1,23 +1,129 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi página de GitHub Pages</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flexbox Práctica Completa</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f7f7f7;
-      text-align: center;
-      margin-top: 100px;
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
-    h1 {
-      color: #333;
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #008cff, #00c6ff);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      gap: 2rem;
+    }
+
+    .intro {
+      max-width: 700px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 1.5rem 2rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .links a {
+      text-decoration: none;
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .links a:hover {
+      background: white;
+      color: #008cff;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background: rgba(0, 0, 0, 0.2);
     }
   </style>
 </head>
 <body>
-  <h1>¡Hola, GitHub Pages funciona correctamente! 🎉</h1>
-  <p>Este es el archivo <code>index.html</code> que sirve como página principal.</p>
+  <header>
+    <h1>🌐 Flexbox Práctica Completa</h1>
+  </header>
+
+  <main>
+    <div class="intro">
+      <p>
+        Bienvenido al proyecto <strong>Flexbox Práctica Completa</strong>.  
+        Aquí podés explorar distintos ejemplos y ejercicios de maquetación con Flexbox, diseñados para ayudarte a dominar el diseño moderno en CSS.
+      </p>
+    </div>
+
+    <div class="links">
+      <a href="Flex1.html">Ejemplo 1</a>
+      <a href="Flex2-align-content_center.html">Ejemplo 2</a>
+      <a href="Flex2-align-items_baseline.html">Flexbox Principal</a>
+      <a href="Flex2-container.html">Ver estilos CSS</a>
+      <a href="Flex2-direction-column-reverse.html">Ver Imágenes</a>
+      <a href="Flex2-direction-column.html">Otros archivos</a>
+     <a href="Flex2-direction-row-reverse.html">Otros archivos</a>
+     <a href="Flex2-direction-row.html">Otros archivos</a>
+     <a href="Flex2-flex-flow-row_wrap.html">Otros archivos</a>
+     <a href="Flex2-flex-wrap-nowrap.html">Otros archivos</a>
+     <a href="Flex2-flex-wrap-wrap.html">Otros archivos</a>
+     <a href="Flex2-justify-content-center.html">Otros archivos</a>
+     <a href="Flex2-justify-content-space-around.html">Otros archivos</a>
+     <a href="Flex3-align-self-center.html">Otros archivos</a>
+     <a href="Flex3-align-self-flex-start-end.html">Otros archivos</a>
+     <a href="Flex3-flex-basis.html">Otros archivos</a>
+     <a href="Flex3-flex-grow.html">Otros archivos</a>
+     <a href="Flex3-items.html">Otros archivos</a>
+     <a href="Flex3-order.html">Otros archivos</a>
+     <a href="Flex3-shrink.html">Otros archivos</a>
+     <a href="Flex4-responsive-flexbox.html">Otros archivos</a>
+     <a href="Flex4-responsive-image.html">Otros archivos</a>
+     <a href="Flex4-responsive-website.html">Otros archivos</a>
+
+</div>
+  </main>
+
+  <footer>
+    <p>© 2025 - Proyecto Flexbox Práctica Completa</p>
+  </footer>
 </body>
 </html>
