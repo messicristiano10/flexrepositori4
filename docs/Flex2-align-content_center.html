@@ -2,16 +2,37 @@
 <html>
 <head>
 <style>
-.container {display: flex; align-content: center;}
-.container > div {margin: 5px; padding: 10px; border: 1px solid #000;}
+.container {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: DodgerBlue;
+}
+
+.container div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;  
+  font-size: 30px;
+}
 </style>
 </head>
 <body>
-<h3>align-content: center</h3>
+
+<h1>flex-direction: column-reverse</h1>
+
+<p>flex-direction: column-reverse; displays the flex items vertically (but from bottom to top):</p>
+
 <div class="container">
-  <div>1</div><div>2</div><div>3</div>
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+</div>
   <a href="index.html">Volver al inicio</a>
 
-</div>
 </body>
 </html>
+
+
+

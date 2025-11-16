@@ -2,16 +2,45 @@
 <html>
 <head>
 <style>
-.container {display: flex; align-items: baseline;}
-.container > div {margin: 5px; padding: 10px; border: 1px solid #000;}
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: DodgerBlue;
+}
+
+.container div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;  
+  font-size: 30px;
+}
 </style>
 </head>
 <body>
-<h3>align-items: baseline</h3>
+
+<h1>flex-wrap: nowrap</h1>
+
+<p>flex-wrap: nowrap; specifies that the flex items will not wrap (this is default):</p>
+
 <div class="container">
-  <div>1</div><div>2</div><div>3</div>
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>  
+  <div>7</div>
+  <div>8</div>
+  <div>9</div>  
+</div>
+
+<p>Try resizing the browser window!</p>
+
   <a href="index.html">Volver al inicio</a>
 
-</div>
 </body>
 </html>
+
+
